@@ -138,5 +138,5 @@ TabsScreen (root)     — manages bottom nav + favourites state
 - State is managed with plain `StatefulWidget` — no third-party state management
 - The `TabsScreen` owns the favourites list and passes `_toggleMealFavoritesStatus` down via constructor arguments
 - Navigation uses `Navigator.push` with `MaterialPageRoute`
-- All meal data is hardcoded in `dummy_data.dart` — no network calls or backend required
+- All meal data is hardcoded in `dummy_data.dart`
 - The star icon on the detail screen toggles the meal in and out of favourites in real time
