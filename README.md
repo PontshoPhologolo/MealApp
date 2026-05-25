@@ -190,7 +190,7 @@ flutterfire configure
 - Select your Firebase project
 - Select **Android** as the platform (Space to select, Enter to confirm)
 
-This generates `lib/firebase_options.dart` automatically — do not create this file manually.
+To generate `lib/firebase_options.dart` file
 
 ---
 
@@ -206,19 +206,6 @@ On first launch the app automatically seeds all 10 meals into Firestore. You wil
 
 ---
 
-## Files to copy to GitHub
-
-Only copy these — everything else is auto-generated:
-
-```
-lib/               ← entire folder (excluding firebase_options.dart)
-pubspec.yaml
-README.md
-```
-
-> Do not commit `lib/firebase_options.dart` — it contains your project credentials. Add it to `.gitignore`.
-
----
 
 ## Notes
 
@@ -228,8 +215,4 @@ README.md
 - Average meal rating is recalculated server-side in Firestore on every review submission
 - `dummy_data.dart` seeds Firestore only once — it checks if the `meals` collection is empty before writing
 
----
 
-## License
-
-MIT
